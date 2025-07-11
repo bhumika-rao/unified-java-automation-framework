@@ -11,14 +11,19 @@ public class ButtonsView {
 
     @FindBy(xpath = "//button[contains(text(),'Primary')]")
     public WebElement btnPrimary;
+
     @FindBy(xpath = "//button[contains(text(),'Success')]")
     public WebElement btnSuccess;
+
     @FindBy(xpath = "//button[contains(text(),'Info')]")
     public WebElement btnInfo;
+
     @FindBy(xpath = "//button[contains(text(),'Warning')]")
     public WebElement btnWarning;
+
     @FindBy(xpath = "//button[contains(text(),'Danger')]")
     public WebElement btnDanger;
+
     @FindBy(xpath = "//button[contains(text(),'Link')]")
     public WebElement btnLink;
 
