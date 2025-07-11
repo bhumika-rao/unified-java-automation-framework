@@ -1,0 +1,4 @@
+web/ButtonsActions.class
+web/ButtonsView.class
+base/BasePage.class
+base/DriverFactory.class
