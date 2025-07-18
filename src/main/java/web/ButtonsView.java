@@ -10,22 +10,22 @@ import org.openqa.selenium.support.PageFactory;
 public class ButtonsView {
 
     @FindBy(xpath = "//button[contains(text(),'Primary')]")
-    public WebElement btnPrimary;
+    private WebElement btnPrimary;
 
     @FindBy(xpath = "//button[contains(text(),'Success')]")
-    public WebElement btnSuccess;
+    private WebElement btnSuccess;
 
     @FindBy(xpath = "//button[contains(text(),'Info')]")
-    public WebElement btnInfo;
+    private WebElement btnInfo;
 
     @FindBy(xpath = "//button[contains(text(),'Warning')]")
-    public WebElement btnWarning;
+    private WebElement btnWarning;
 
     @FindBy(xpath = "//button[contains(text(),'Danger')]")
-    public WebElement btnDanger;
+    private WebElement btnDanger;
 
     @FindBy(xpath = "//button[contains(text(),'Link')]")
-    public WebElement btnLink;
+    private WebElement btnLink;
 
     public ButtonsView(WebDriver driver) {
         PageFactory.initElements(driver, this);

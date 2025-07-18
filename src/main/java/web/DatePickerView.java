@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 public class DatePickerView {
 
     @FindBy(xpath = "//input[@id='datepicker']")
-    public WebElement inputDatePicker;
+    private WebElement inputDatePicker;
 
     public DatePickerView(WebDriver driver) {
         PageFactory.initElements(driver, this);

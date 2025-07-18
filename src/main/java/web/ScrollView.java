@@ -10,10 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 public class ScrollView {
 
     @FindBy(id = "name")
-    public WebElement nameField;
+    private WebElement nameField;
 
     @FindBy(id = "date")
-    public WebElement dateField;
+    private WebElement dateField;
 
     public ScrollView(WebDriver driver) {
         PageFactory.initElements(driver, this);

@@ -11,9 +11,9 @@ import org.openqa.selenium.support.PageFactory;
 public class SwitchWindowAndAlertView extends BasePage {
 
     @FindBy(id = "new-tab-button")
-    public WebElement btnNewTab;
+    private WebElement btnNewTab;
     @FindBy(id = "alert-button")
-    public WebElement btnAlert;
+    private WebElement btnAlert;
 
     public SwitchWindowAndAlertView(WebDriver driver) {
         super(driver);

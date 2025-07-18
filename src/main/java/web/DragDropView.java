@@ -10,10 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 public class DragDropView {
 
     @FindBy(id = "image")
-    public WebElement sourceImage;
+    private WebElement sourceImage;
 
     @FindBy(id = "box")
-    public WebElement targetBox;
+    private WebElement targetBox;
 
     public DragDropView(WebDriver driver) {
         PageFactory.initElements(driver, this);

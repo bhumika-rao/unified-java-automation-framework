@@ -11,11 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 @Getter
 public class ModalView extends BasePage {
     @FindBy(id = "modal-button")
-    public WebElement btnOpenModal;
+    private WebElement btnOpenModal;
     @FindBy(id = "close-button")
-    public WebElement btnCloseModal;
+    private WebElement btnCloseModal;
     @FindBy(id = "ok-button")
-    public WebElement btnOkModal;
+    private WebElement btnOkModal;
 
     public ModalView(WebDriver driver) {
         super(driver);

@@ -11,11 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 public class FileUploadView extends BasePage {
 
     @FindBy(id = "file-upload-field")
-    public WebElement inputFileUpload;
+    private WebElement inputFileUpload;
     @FindBy(xpath = "//button[contains(text(),'Choose')]")
-    public WebElement btnFileChoose;
+    private WebElement btnFileChoose;
     @FindBy(xpath = "//button[contains(text(),'Reset')]")
-    public WebElement btnFileReset;
+    private WebElement btnFileReset;
 
     public FileUploadView(WebDriver driver) {
         super(driver);

@@ -12,7 +12,7 @@ public class DropdownView {
         this.driver = driver;
     }
 
-    public WebElement getDropdownButton() {
+    private WebElement getDropdownButton() {
         return driver.findElement(By.id("dropdownMenuButton"));
     }
 
