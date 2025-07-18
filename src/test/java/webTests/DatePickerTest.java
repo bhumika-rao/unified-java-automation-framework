@@ -2,14 +2,11 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import web.DatePickerActions;
 import web.DatePickerView;
-
-import java.io.IOException;
 
 /**
  * Test class for the DatePicker functionality on the Formy DatePicker page.
@@ -21,11 +18,13 @@ public class DatePickerTest extends BaseClass {
     private DatePickerView datePickerView;
     private DatePickerActions datePickerActions;
 
-    @BeforeClass
-    public void setUp() throws IOException {
-        super.setUp();
-        driver.get(webAutomationUrl + "datepicker");
+    {
+        pageUrl = "/datepicker";
+    }
 
+    @BeforeClass
+    public void setUp() {
+        super.setUp();
         datePickerView = new DatePickerView(driver);
         datePickerActions = new DatePickerActions(driver, datePickerView);
     }
@@ -47,12 +46,5 @@ public class DatePickerTest extends BaseClass {
     public void testDateEntry(String date) {
         datePickerActions.enterDate(date);
         Assert.assertEquals(datePickerView.getInputDatePicker().getAttribute("value"), date, "Date not entered correctly");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

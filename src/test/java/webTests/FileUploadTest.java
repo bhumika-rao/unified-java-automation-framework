@@ -2,22 +2,22 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.FileUploadActions;
 import web.FileUploadView;
 
-import java.io.IOException;
-
 public class FileUploadTest extends BaseClass {
     private FileUploadView fileUploadView;
     private FileUploadActions fileUploadActions;
 
+    {
+        pageUrl = "/fileupload";
+    }
+
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp() {
         super.setUp();
-        driver.get(webAutomationUrl + "fileupload");
         fileUploadView = new FileUploadView(driver);
         fileUploadActions = new FileUploadActions(driver, fileUploadView);
     }
@@ -44,12 +44,5 @@ public class FileUploadTest extends BaseClass {
 
         // Verify the file was uploaded successfully
         Assert.assertTrue(fileUploadView.getInputFileUpload().getAttribute("value").contains(config.getProperty("test.video.path")), "Video file was not uploaded successfully.");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

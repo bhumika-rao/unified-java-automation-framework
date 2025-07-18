@@ -7,17 +7,18 @@ import org.testng.asserts.SoftAssert;
 import web.DropdownActions;
 import web.DropdownView;
 
-import java.io.IOException;
-
 public class DropdownTest extends BaseClass {
 
     private DropdownActions dropdownActions;
     private DropdownView dropdownView;
 
+    {
+        pageUrl = "/dropdown";
+    }
+
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp() {
         super.setUp();
-        driver.get(webAutomationUrl + "dropdown");
         dropdownView = new DropdownView(driver);
         dropdownActions = new DropdownActions(driver, dropdownView);
     }
@@ -47,7 +48,6 @@ public class DropdownTest extends BaseClass {
             String optionText = option[0];
             String expectedUrl = option[1];
 
-            driver.get(webAutomationUrl + "dropdown");
             dropdownActions.selectDropdownOptionWithWait(optionText);
             String actualUrl = dropdownActions.getCurrentPageUrl();
 

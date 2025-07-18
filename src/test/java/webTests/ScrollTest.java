@@ -2,22 +2,22 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.ScrollActions;
 import web.ScrollView;
 
-import java.io.IOException;
-
 public class ScrollTest extends BaseClass {
     private ScrollView scrollView;
     private ScrollActions scrollActions;
 
+    {
+        pageUrl = "/scroll";
+    }
+
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp() {
         super.setUp();
-        driver.get(webAutomationUrl + "scroll");
         scrollView = new ScrollView(driver);
         scrollActions = new ScrollActions(driver, scrollView);
     }
@@ -34,12 +34,5 @@ public class ScrollTest extends BaseClass {
         // Enter name and date after scrolling
         scrollActions.enterName("Jane Doe");
         scrollActions.enterDate("2023-10-01");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

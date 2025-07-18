@@ -2,13 +2,10 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.CheckboxActions;
 import web.CheckboxView;
-
-import java.io.IOException;
 
 /**
  * This class contains tests for the Checkbox functionality on the web application.
@@ -20,11 +17,13 @@ public class CheckboxTest extends BaseClass {
     private CheckboxView checkboxView;
     private CheckboxActions checkboxActions;
 
-    @BeforeClass
-    public void setUp() throws IOException {
-        super.setUp();
-        driver.get(webAutomationUrl + "checkbox");
+    {
+        pageUrl = "/checkbox";
+    }
 
+    @BeforeClass
+    public void setUp() {
+        super.setUp();
         checkboxView = new CheckboxView(driver);
         checkboxActions = new CheckboxActions(driver, checkboxView);
     }
@@ -58,12 +57,5 @@ public class CheckboxTest extends BaseClass {
         // Uncheck the third checkbox
         checkboxActions.unSelectCheckbox(3);
         Assert.assertFalse(checkboxActions.isCheckboxSelected(3), "Checkbox 3 should be unselected");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

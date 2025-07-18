@@ -7,8 +7,6 @@ import org.testng.annotations.Test;
 import web.DragDropActions;
 import web.DragDropView;
 
-import java.io.IOException;
-
 /**
  * Test class for Drag and Drop functionality.
  * This class tests the drag and drop feature by dragging an image to a target box
@@ -21,11 +19,13 @@ public class DragDropTest extends BaseClass {
     private DragDropView dragDropView;
     private DragDropActions dragDropActions;
 
-    @BeforeClass
-    public void setUp() throws IOException {
-        super.setUp();
-        driver.get(webAutomationUrl + "dragdrop");
+    {
+        pageUrl = "/dragdrop";
+    }
 
+    @BeforeClass
+    public void setUp() {
+        super.setUp();
         dragDropView = new DragDropView(driver);
         dragDropActions = new DragDropActions(driver, dragDropView);
     }

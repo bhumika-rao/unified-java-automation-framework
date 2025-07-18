@@ -2,13 +2,10 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.ButtonsActions;
 import web.ButtonsView;
-
-import java.io.IOException;
 
 /**
  * Test class for all button types on Formy Buttons page.
@@ -27,11 +24,13 @@ public class ButtonsTest extends BaseClass {
     private ButtonsView buttonsView;
     private ButtonsActions buttonsActions;
 
-    @BeforeClass
-    public void setUp() throws IOException {
-        super.setUp();
-        driver.get(webAutomationUrl + "buttons");
+    {
+        pageUrl = "/buttons";
+    }
 
+    @BeforeClass
+    public void init() {
+        super.setUp();
         buttonsView = new ButtonsView(driver);
         buttonsActions = new ButtonsActions(driver, buttonsView);
     }
@@ -71,12 +70,5 @@ public class ButtonsTest extends BaseClass {
     public void testLinkButton() {
         Assert.assertTrue(buttonsActions.isLinkButtonDisplayed(), "Link button is not displayed.");
         buttonsActions.clickLinkButton();
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

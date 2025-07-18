@@ -1,5 +1,6 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,33 +13,39 @@ import java.util.Properties;
 public class DriverFactory {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static Properties config;
+    private final Properties config;
 
     public DriverFactory(Properties properties) {
-        config = properties;
+        this.config = properties;
     }
 
     public WebDriver initDriver() {
         String browser = config.getProperty("browser", "chrome").toLowerCase(Locale.ROOT);
+        WebDriver localDriver;
+
         switch (browser) {
             case "chrome" -> {
-                System.setProperty("webdriver.chrome.driver", config.getProperty("chrome.driver.path"));
+                WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 if ("true".equals(config.getProperty("headless"))) {
                     options.addArguments("--headless=new");
                 }
-                driver.set(new ChromeDriver(options));
+                localDriver = new ChromeDriver(options);
             }
             case "firefox" -> {
-                System.setProperty("webdriver.gecko.driver", config.getProperty("firefox.driver.path"));
-                driver.set(new FirefoxDriver());
+                WebDriverManager.firefoxdriver().setup();
+                localDriver = new FirefoxDriver();
             }
             default -> throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 
-        driver.get().manage().window().maximize();
-        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(config.getProperty("implicit.wait", "10"))));
-        return driver.get();
+        localDriver.manage().window().maximize();
+        localDriver.manage().timeouts().implicitlyWait(
+                Duration.ofSeconds(Long.parseLong(config.getProperty("implicit.wait", "10")))
+        );
+
+        driver.set(localDriver);
+        return localDriver;
     }
 
     public WebDriver getDriver() {
@@ -46,8 +53,9 @@ public class DriverFactory {
     }
 
     public void quitDriver() {
-        if (driver.get() != null) {
-            driver.get().quit();
+        WebDriver currentDriver = driver.get();
+        if (currentDriver != null) {
+            currentDriver.quit();
             driver.remove();
         }
     }

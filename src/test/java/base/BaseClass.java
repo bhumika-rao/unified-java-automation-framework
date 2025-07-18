@@ -1,32 +1,49 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
-import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class BaseClass {
 
-    public static final String webAutomationUrl = "https://formy-project.herokuapp.com/";
+    protected static String webAutomationUrl;
+    protected String pageUrl;
+
     protected WebDriver driver;
     protected DriverFactory driverFactory;
     protected Properties config;
 
-    @BeforeMethod
-    public void setUp() throws IOException {
+    @BeforeSuite
+    public void loadConfig() throws IOException {
         config = new Properties();
-        FileInputStream fis = new FileInputStream("resources/config.properties");
-        config.load(fis);
-
-        driverFactory = new DriverFactory(config);
-        driver = driverFactory.initDriver();
+        try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
+            if (input == null) {
+                throw new IOException("config.properties not found");
+            }
+            config.load(input);
+        }
+        webAutomationUrl = config.getProperty("baseUrl");
     }
 
-    @AfterMethod
+
+    @BeforeClass
+    public void setUp() {
+        this.pageUrl = pageUrl;
+        driverFactory = new DriverFactory(config);
+        driver = driverFactory.initDriver();
+        driver.get(webAutomationUrl + this.pageUrl);
+    }
+
+
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
-        driverFactory.quitDriver();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

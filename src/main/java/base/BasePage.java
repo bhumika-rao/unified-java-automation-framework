@@ -1,6 +1,7 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.SeleniumUtils;
 
@@ -17,5 +18,6 @@ public class BasePage {
         int timeout = 10; // 10 seconds default timeout
         wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         seleniumUtils = new SeleniumUtils(driver, 10);
+        PageFactory.initElements(driver, this);
     }
 }

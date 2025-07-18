@@ -2,23 +2,23 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.SwitchWindowAndAlertActions;
 import web.SwitchWindowAndAlertView;
-
-import java.io.IOException;
 
 public class SwitchWindowAndAlertTest extends BaseClass {
 
     private SwitchWindowAndAlertView switchWindowAndAlertView;
     private SwitchWindowAndAlertActions switchWindowAndAlertActions;
 
+    {
+        pageUrl = "/switch-window";
+    }
+
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp() {
         super.setUp();
-        driver.get(webAutomationUrl + "switch-window");
         switchWindowAndAlertView = new SwitchWindowAndAlertView(driver);
         switchWindowAndAlertActions = new SwitchWindowAndAlertActions(driver, switchWindowAndAlertView);
     }
@@ -36,12 +36,4 @@ public class SwitchWindowAndAlertTest extends BaseClass {
         Assert.assertEquals(alertText, "This is a test alert!", "Alert text mismatch.");
         System.out.println("Alert handled with text: " + alertText);
     }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
-
 }

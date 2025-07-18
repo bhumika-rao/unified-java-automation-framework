@@ -2,23 +2,23 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.ModalActions;
 import web.ModalView;
-
-import java.io.IOException;
 
 public class ModalTest extends BaseClass {
 
     private ModalView modalView;
     private ModalActions modalActions;
 
+    {
+        pageUrl = "/modal";
+    }
+
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp() {
         super.setUp();
-        driver.get(webAutomationUrl + "modal");
         modalView = new ModalView(driver);
         modalActions = new ModalActions(driver, modalView);
     }
@@ -45,12 +45,5 @@ public class ModalTest extends BaseClass {
 
         // Verify the modal is closed
         Assert.assertTrue(modalActions.waitForModalClosed(), "Modal did not close successfully");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

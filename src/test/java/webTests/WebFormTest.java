@@ -2,23 +2,23 @@ package webTests;
 
 import base.BaseClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import web.WebFormActions;
 import web.WebFormView;
-
-import java.io.IOException;
 
 public class WebFormTest extends BaseClass {
 
     private WebFormActions webFormActions;
     private WebFormView webFormView;
 
+    {
+        pageUrl = "/form";
+    }
+
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp() {
         super.setUp();
-        driver.get(webAutomationUrl + "form");
         webFormView = new WebFormView(driver);
         webFormActions = new WebFormActions(driver, webFormView);
     }
@@ -37,13 +37,6 @@ public class WebFormTest extends BaseClass {
                 webFormActions.getSuccessMessage().trim(),
                 "The form was successfully submitted!",
                 "Form submission failed or success message not displayed.");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 
 }

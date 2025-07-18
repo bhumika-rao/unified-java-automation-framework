@@ -15,7 +15,7 @@ public class CheckboxView {
     }
 
     //Instead of using multiple web elements for each checkbox, we have implemented a method to get the checkbox by its number.
-    private WebElement getCheckboxByNumber(int number) {
+    public WebElement getCheckboxByNumber(int number) {
         return driver.findElement(By.xpath("//input[@id='checkbox-" + number + "']"));
     }
 
