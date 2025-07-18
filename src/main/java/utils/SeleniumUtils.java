@@ -4,6 +4,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.time.Duration;
 
 public class SeleniumUtils {
@@ -16,6 +19,19 @@ public class SeleniumUtils {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
         this.js = (JavascriptExecutor) driver;
+    }
+
+    public static String captureScreenshot(WebDriver driver, String testName) {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String path = "test-output/screenshots/" + testName + ".png";
+        File dest = new File(path);
+        try {
+            Files.createDirectories(dest.getParentFile().toPath());
+            Files.copy(src.toPath(), dest.toPath());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return path;
     }
 
     // Wait until element is visible
@@ -144,7 +160,6 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.alertIsPresent());
     }
-
 }
 
 

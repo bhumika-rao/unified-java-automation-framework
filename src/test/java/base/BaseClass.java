@@ -30,11 +30,8 @@ public class BaseClass {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
-        if (config == null) {
-            throw new RuntimeException("Config was not initialized!");
-        }
         this.pageUrl = pageUrl;
-        driverFactory = new DriverFactory(config);
+        driverFactory = new DriverFactory(config); // will work for all classes now
         driver = driverFactory.initDriver();
         driver.get(webAutomationUrl + this.pageUrl);
     }
@@ -46,3 +43,4 @@ public class BaseClass {
         }
     }
 }
+
