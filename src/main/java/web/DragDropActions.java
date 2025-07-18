@@ -1,15 +1,15 @@
 package web;
 
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class DragDropActions {
+public class DragDropActions extends BasePage {
 
-    private final WebDriver driver;
     private final DragDropView view;
 
     public DragDropActions(WebDriver driver, DragDropView view) {
-        this.driver = driver;
+        super(driver);
         this.view = view;
     }
 

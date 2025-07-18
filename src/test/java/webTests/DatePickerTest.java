@@ -27,7 +27,7 @@ public class DatePickerTest extends BaseClass {
         driver.get(webAutomationUrl + "datepicker");
 
         datePickerView = new DatePickerView(driver);
-        datePickerActions = new DatePickerActions(datePickerView);
+        datePickerActions = new DatePickerActions(driver, datePickerView);
     }
 
     @DataProvider(name = "dateProvider")

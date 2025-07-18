@@ -14,7 +14,7 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        int timeout = 10; // seconds, you can parametrize if you want
+        int timeout = 10; // 10 seconds default timeout
         wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         seleniumUtils = new SeleniumUtils(driver, 10);
     }

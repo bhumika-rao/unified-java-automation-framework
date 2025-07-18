@@ -33,7 +33,7 @@ public class ButtonsTest extends BaseClass {
         driver.get(webAutomationUrl + "buttons");
 
         buttonsView = new ButtonsView(driver);
-        buttonsActions = new ButtonsActions(buttonsView);
+        buttonsActions = new ButtonsActions(driver, buttonsView);
     }
 
 

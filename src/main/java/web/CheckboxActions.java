@@ -1,10 +1,14 @@
 package web;
 
-public class CheckboxActions {
+import base.BasePage;
+import org.openqa.selenium.WebDriver;
+
+public class CheckboxActions extends BasePage {
 
     private final CheckboxView checkboxView;
 
-    public CheckboxActions(CheckboxView checkboxView) {
+    public CheckboxActions(WebDriver driver, CheckboxView checkboxView) {
+        super(driver);
         this.checkboxView = checkboxView;
     }
 

@@ -1,10 +1,13 @@
 package web;
 
-public class ButtonsActions {
+import base.BasePage;
+import org.openqa.selenium.WebDriver;
 
+public class ButtonsActions extends BasePage {
     private final ButtonsView buttonsView;
 
-    public ButtonsActions(ButtonsView buttonsView) {
+    public ButtonsActions(WebDriver driver, ButtonsView buttonsView) {
+        super(driver);
         this.buttonsView = buttonsView;
     }
 

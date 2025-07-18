@@ -1,6 +1,7 @@
 package webTests;
 
 import base.BaseClass;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -25,43 +26,38 @@ public class CheckboxTest extends BaseClass {
         driver.get(webAutomationUrl + "checkbox");
 
         checkboxView = new CheckboxView(driver);
-        checkboxActions = new CheckboxActions(checkboxView);
+        checkboxActions = new CheckboxActions(driver, checkboxView);
     }
 
     @Test
     public void testSelectionOfCheckboxes() {
         // Check the first checkbox
         checkboxActions.selectCheckbox(1);
-        // Verify the first checkbox is checked
-        checkboxActions.isCheckboxSelected(1);
+        // Assert it is selected
+        Assert.assertTrue(checkboxActions.isCheckboxSelected(1), "Checkbox 1 should be selected");
 
         // Check the second checkbox
         checkboxActions.selectCheckbox(2);
-        // Verify the second checkbox is checked
-        checkboxActions.isCheckboxSelected(2);
+        Assert.assertTrue(checkboxActions.isCheckboxSelected(2), "Checkbox 2 should be selected");
 
         // Check the third checkbox
         checkboxActions.selectCheckbox(3);
-        // Verify the third checkbox is checked
-        checkboxActions.isCheckboxSelected(3);
+        Assert.assertTrue(checkboxActions.isCheckboxSelected(3), "Checkbox 3 should be selected");
     }
 
     @Test(dependsOnMethods = "testSelectionOfCheckboxes")
     public void testUnselectionOfCheckboxes() {
         // Uncheck the first checkbox
         checkboxActions.unSelectCheckbox(1);
-        // Verify the first checkbox is unchecked
-        checkboxActions.isCheckboxUnselected(1);
+        Assert.assertFalse(checkboxActions.isCheckboxSelected(1), "Checkbox 1 should be unselected");
 
         // Uncheck the second checkbox
         checkboxActions.unSelectCheckbox(2);
-        // Verify the second checkbox is unchecked
-        checkboxActions.isCheckboxUnselected(2);
+        Assert.assertFalse(checkboxActions.isCheckboxSelected(2), "Checkbox 2 should be unselected");
 
         // Uncheck the third checkbox
         checkboxActions.unSelectCheckbox(3);
-        // Verify the third checkbox is unchecked
-        checkboxActions.isCheckboxUnselected(3);
+        Assert.assertFalse(checkboxActions.isCheckboxSelected(3), "Checkbox 3 should be unselected");
     }
 
     @AfterClass

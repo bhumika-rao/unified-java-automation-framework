@@ -18,24 +18,24 @@ import java.io.IOException;
  */
 public class DragDropTest extends BaseClass {
 
-    private DragDropView view;
-    private DragDropActions actions;
+    private DragDropView dragDropView;
+    private DragDropActions dragDropActions;
 
     @BeforeClass
     public void setUp() throws IOException {
         super.setUp();
         driver.get(webAutomationUrl + "dragdrop");
 
-        view = new DragDropView(driver);
-        actions = new DragDropActions(driver, view);
+        dragDropView = new DragDropView(driver);
+        dragDropActions = new DragDropActions(driver, dragDropView);
     }
 
     @Test
     public void testDragAndDropImage() {
-        actions.performDragAndDrop();
+        dragDropActions.performDragAndDrop();
 
         // Validation: Check if the image is still visible in the drop box
-        Assert.assertTrue(view.getTargetBox().getText().contains("Dropped!"),
+        Assert.assertTrue(dragDropView.getTargetBox().getText().contains("Dropped!"),
                 "Image not dropped successfully.");
     }
 }

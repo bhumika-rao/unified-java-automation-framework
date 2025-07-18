@@ -1,9 +1,13 @@
 package web;
 
-public class DatePickerActions {
+import base.BasePage;
+import org.openqa.selenium.WebDriver;
+
+public class DatePickerActions extends BasePage {
     private final DatePickerView datePickerView;
 
-    public DatePickerActions(DatePickerView datePickerView) {
+    public DatePickerActions(WebDriver driver, DatePickerView datePickerView) {
+        super(driver);
         this.datePickerView = datePickerView;
     }
 

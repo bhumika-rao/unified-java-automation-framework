@@ -11,14 +11,15 @@ import java.io.IOException;
 
 public class DropdownTest extends BaseClass {
 
-    private DropdownActions actions;
+    private DropdownActions dropdownActions;
+    private DropdownView dropdownView;
 
     @BeforeClass
     public void setUp() throws IOException {
         super.setUp();
         driver.get(webAutomationUrl + "dropdown");
-        DropdownView view = new DropdownView(driver);
-        actions = new DropdownActions(driver, view);
+        dropdownView = new DropdownView(driver);
+        dropdownActions = new DropdownActions(driver, dropdownView);
     }
 
     @Test
@@ -47,8 +48,8 @@ public class DropdownTest extends BaseClass {
             String expectedUrl = option[1];
 
             driver.get(webAutomationUrl + "dropdown");
-            actions.selectDropdownOptionWithWait(optionText);
-            String actualUrl = actions.getCurrentPageUrl();
+            dropdownActions.selectDropdownOptionWithWait(optionText);
+            String actualUrl = dropdownActions.getCurrentPageUrl();
 
             softAssert.assertEquals(actualUrl, expectedUrl,
                     "Navigation failed for: " + optionText);

@@ -48,7 +48,7 @@ public class SeleniumUtils {
         wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
     }
 
-    // Combined: Wait → Scroll → Click
+    // Combined: Wait-Scroll-Click
     public void waitScrollClick(By locator) {
         WebElement element = waitForClickability(locator);
         scrollToElement(element);
@@ -118,7 +118,7 @@ public class SeleniumUtils {
         js.executeScript("arguments[0].style.border='3px solid red'", element);
     }
 
-    // Clear field and send keys (force)
+    // Clear field and send keys
     public void clearAndType(By locator, String text) {
         WebElement element = waitForVisibility(locator);
         js.executeScript("arguments[0].value='';", element);
