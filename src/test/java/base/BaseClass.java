@@ -12,15 +12,13 @@ import java.util.Properties;
 public class BaseClass {
 
     protected static String webAutomationUrl;
+    protected static Properties config = new Properties(); // static
     protected String pageUrl;
-
     protected WebDriver driver;
     protected DriverFactory driverFactory;
-    protected Properties config;
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void loadConfig() throws IOException {
-        config = new Properties();
         try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
                 throw new IOException("config.properties not found");
@@ -30,15 +28,16 @@ public class BaseClass {
         webAutomationUrl = config.getProperty("baseUrl");
     }
 
-
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void setUp() {
+        if (config == null) {
+            throw new RuntimeException("Config was not initialized!");
+        }
         this.pageUrl = pageUrl;
         driverFactory = new DriverFactory(config);
         driver = driverFactory.initDriver();
         driver.get(webAutomationUrl + this.pageUrl);
     }
-
 
     @AfterClass(alwaysRun = true)
     public void tearDown() {
