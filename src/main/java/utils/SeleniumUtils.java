@@ -125,6 +125,26 @@ public class SeleniumUtils {
         element.sendKeys(text);
     }
 
+    public boolean isElementInView(WebElement element) {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        Object result = jsExecutor.executeScript(
+                "const rect = arguments[0].getBoundingClientRect();" +
+                        "return (" +
+                        "rect.top >= 0 && " +
+                        "rect.left >= 0 && " +
+                        "rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && " +
+                        "rect.right <= (window.innerWidth || document.documentElement.clientWidth));",
+                element
+        );
+
+        return result instanceof Boolean && (Boolean) result;
+    }
+
+    public void waitForAlert() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+
 }
 
 

@@ -1,19 +1,16 @@
 package web;
 
+import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import utils.SeleniumUtils;
 
-public class DropdownActions {
+public class DropdownActions extends BasePage {
 
     private final DropdownView dropdownView;
-    private final WebDriver driver;
-    SeleniumUtils seleniumUtils;
 
     public DropdownActions(WebDriver driver, DropdownView dropdownView) {
-        this.driver = driver;
+        super(driver);
         this.dropdownView = dropdownView;
-        seleniumUtils = new SeleniumUtils(driver, 10);
     }
 
     public void selectDropdownOptionWithWait(String optionText) {

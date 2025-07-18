@@ -1,2 +1,56 @@
-package webTests;public class ModalTest {
+package webTests;
+
+import base.BaseClass;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import web.ModalActions;
+import web.ModalView;
+
+import java.io.IOException;
+
+public class ModalTest extends BaseClass {
+
+    private ModalView modalView;
+    private ModalActions modalActions;
+
+    @BeforeClass
+    public void setUp() throws IOException {
+        super.setUp();
+        driver.get(webAutomationUrl + "modal");
+        modalView = new ModalView(driver);
+        modalActions = new ModalActions(driver, modalView);
+    }
+
+    @Test
+    public void testOpenModal() {
+        // Open the modal
+        modalActions.openModal();
+
+        // Verify the modal is open
+        Assert.assertTrue(modalActions.waitForModalOpen(), "Modal did not open successfully");
+
+        // Verify the modal title
+        String expectedTitle = "Modal title";
+        String actualTitle = modalActions.getModalTitle();
+        Assert.assertTrue(actualTitle.contains(expectedTitle), "Modal title is incorrect");
+
+    }
+
+    @Test(dependsOnMethods = "testOpenModal")
+    public void testCloseModal() {
+        // Close the modal
+        modalActions.closeModal();
+
+        // Verify the modal is closed
+        Assert.assertTrue(modalActions.waitForModalClosed(), "Modal did not close successfully");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
