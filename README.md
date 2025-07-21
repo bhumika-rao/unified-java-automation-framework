@@ -15,22 +15,32 @@ Built from scratch with modular design, Page Object Model (View + Action), and r
 
 ```
 unified-java-automation-framework/
-├── pom.xml
-├── config/
-│   └── config.properties
-├── drivers/
-│   └── chromedriver (local executable)
+├── drivers/                         # Local drivers, not needed with WebDriverManager (optional)
+├── reports/                         # Extent report outputs (optional)
 ├── src/
 │   ├── main/
 │   │   └── java/
-│   │       └── utils/
+│   │       ├── api/                 # API testing layer (planned)
+│   │       ├── base/                # BasePage, DriverFactory
+│   │       ├── mobile/              # Mobile test layer (planned)
+│   │       ├── performance/         # JMeter support (planned)
+│   │       ├── utils/               # Utility/helper classes
+│   │       └── web/                 # Web page View + Action classes
 │   └── test/
 │       ├── java/
-│       │   ├── base/
-│       │   ├── web/
-│       │   └── webTests/
+│       │   ├── base/                # Base test classes
+│       │   ├── reports/             # ExtentReport config (planned)
+│       │   └── webTests/            # Actual test cases
 │       └── resources/
-│           └── testng.xml
+│           ├── config.properties    # Configurable parameters
+│           ├── TestImage.png        # Sample upload image
+│           └── TestVideo.mp4        # Sample upload video
+├── test-output/                     # TestNG + Extent output
+│   └── ExtentReport.html
+├── pom.xml                          # Maven build file
+├── testng.xml                       # TestNG suite configuration
+└── README.md                        # You’re reading this!
+
 ```
 
 ---
@@ -67,14 +77,15 @@ unified-java-automation-framework/
 ## 📌 Test Coverage (So Far)
 
 - [x] Buttons Page (`/buttons`)
-- [ ] Checkboxes Page (`/checkbox`) — in progress
-- [ ] Dropdowns
-- [ ] Form Submission
-- [ ] Modal Windows
-- [ ] File Uploads
-- [ ] Datepicker
-- [ ] Drag & Drop
-- [ ] Multiple Tabs/Windows
+- [x] Checkboxes Page (`/checkbox`)
+- [x] Date Picker
+- [x] Dropdowns
+- [x] Scroll page
+- [x] Modal Windows
+- [x] File Uploads
+- [x] Drag & Drop
+- [x] Multiple Tabs/Windows
+- [x] Form Submission
 
 > Powered by the open-source [Formy Project](https://formy-project.herokuapp.com/) app
 
@@ -85,7 +96,8 @@ unified-java-automation-framework/
 ### Prerequisites:
 - Java 17+
 - Maven installed
-- ChromeDriver placed in `/drivers/` folder
+✅ No need to download ChromeDriver manually —  
+WebDriverManager will handle it automatically at runtime.
 
 ### Run from CLI:
 ```bash
@@ -105,10 +117,14 @@ mvn test -DsuiteXmlFile=testng.xml
 Edit `config.properties` to customize run:
 
 ```properties
-chrome.driver.path=drivers/chromedriver
 browser=chrome
-headless=false
-webAutomationUrl=https://formy-project.herokuapp.com/
+baseUrl=https://formy-project.herokuapp.com
+platform=web
+api.base.url=https://reqres.in
+mobile.platform=Android
+chrome.driver.path=drivers/chromedriver     #chrome.driver.path not required when using WebDriverManager
+test.image.path=resources/TestImage.png
+test.video.path=resources/TestVideo.mp4
 ```
 
 ---
@@ -116,10 +132,10 @@ webAutomationUrl=https://formy-project.herokuapp.com/
 ## 🚀 Roadmap
 
 - [x] Basic Web UI framework
+- [x] Add reporting (ExtentReports or Allure)
 - [ ] Add support for API & Appium modules
 - [ ] Docker support with Selenium Grid
 - [ ] Integrate JMeter for performance test triggering
-- [ ] Add reporting (ExtentReports or Allure)
 - [ ] GitHub Actions CI pipeline
 
 ---
