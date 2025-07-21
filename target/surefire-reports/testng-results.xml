@@ -1,121 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-11T16:13:12 IST" name="UI Automation Suite" finished-at="2025-07-11T16:13:12 IST" duration-ms="40">
+  <suite started-at="2025-07-21T12:40:17 IST" name="UI Automation Suite" finished-at="2025-07-21T12:41:32 IST" duration-ms="75101">
     <groups>
     </groups>
-    <test started-at="2025-07-11T16:13:12 IST" name="Web UI Automation Tests" finished-at="2025-07-11T16:13:12 IST" duration-ms="40">
+    <test started-at="2025-07-21T12:40:17 IST" name="Web UI Automation Tests" finished-at="2025-07-21T12:41:32 IST" duration-ms="75101">
       <class name="webTests.ButtonsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ButtonsTest@7c711375]" started-at="2025-07-11T16:13:12 IST" name="setUp" finished-at="2025-07-11T16:13:12 IST" duration-ms="8" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[src/test/resources/config.properties (No such file or directory)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: src/test/resources/config.properties (No such file or directory)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at base.BaseClass.setUp(BaseClass.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:22 IST" name="setUp" finished-at="2025-07-21T12:41:26 IST" duration-ms="4081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testPrimaryButton()[pri:0, instance:webTests.ButtonsTest@7c711375]" started-at="2025-07-11T16:13:12 IST" name="testPrimaryButton" finished-at="2025-07-11T16:13:12 IST" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[src/test/resources/config.properties (No such file or directory)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: src/test/resources/config.properties (No such file or directory)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at base.BaseClass.setUp(BaseClass.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+        <test-method is-config="true" signature="init()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:26 IST" name="init" finished-at="2025-07-21T12:41:32 IST" duration-ms="5775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testDangerButton()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="testDangerButton" finished-at="2025-07-21T12:41:32 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerButton -->
+        <test-method signature="testInfoButton()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="testInfoButton" finished-at="2025-07-21T12:41:32 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInfoButton -->
+        <test-method signature="testLinkButton()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="testLinkButton" finished-at="2025-07-21T12:41:32 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkButton -->
+        <test-method signature="testPrimaryButton()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="testPrimaryButton" finished-at="2025-07-21T12:41:32 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPrimaryButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ButtonsTest@7c711375]" started-at="2025-07-11T16:13:12 IST" name="tearDown" finished-at="2025-07-11T16:13:12 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testSuccessButton()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="testSuccessButton" finished-at="2025-07-21T12:41:32 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessButton -->
+        <test-method signature="testWarningButton()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="testWarningButton" finished-at="2025-07-21T12:41:32 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWarningButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ButtonsTest@34a875b3]" started-at="2025-07-21T12:41:32 IST" name="tearDown" finished-at="2025-07-21T12:41:32 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.ButtonsTest -->
+      <class name="webTests.ScrollTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ScrollTest@1afdd473]" started-at="2025-07-21T12:41:03 IST" name="setUp" finished-at="2025-07-21T12:41:07 IST" duration-ms="4122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEnterNameAndDate()[pri:0, instance:webTests.ScrollTest@1afdd473]" started-at="2025-07-21T12:41:07 IST" name="testEnterNameAndDate" finished-at="2025-07-21T12:41:07 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterNameAndDate -->
+        <test-method signature="testScrollToNameAndDateField()[pri:0, instance:webTests.ScrollTest@1afdd473]" started-at="2025-07-21T12:41:07 IST" name="testScrollToNameAndDateField" finished-at="2025-07-21T12:41:07 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollToNameAndDateField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ScrollTest@1afdd473]" started-at="2025-07-21T12:41:07 IST" name="tearDown" finished-at="2025-07-21T12:41:07 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.ScrollTest -->
+      <class name="webTests.SwitchWindowAndAlertTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.SwitchWindowAndAlertTest@40238dd0]" started-at="2025-07-21T12:41:07 IST" name="setUp" finished-at="2025-07-21T12:41:12 IST" duration-ms="4164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSwitchToAlert()[pri:0, instance:webTests.SwitchWindowAndAlertTest@40238dd0]" started-at="2025-07-21T12:41:12 IST" name="testSwitchToAlert" finished-at="2025-07-21T12:41:12 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitchToAlert -->
+        <test-method signature="testSwitchToNewWindow()[pri:0, instance:webTests.SwitchWindowAndAlertTest@40238dd0]" started-at="2025-07-21T12:41:12 IST" name="testSwitchToNewWindow" finished-at="2025-07-21T12:41:12 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitchToNewWindow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.SwitchWindowAndAlertTest@40238dd0]" started-at="2025-07-21T12:41:12 IST" name="tearDown" finished-at="2025-07-21T12:41:12 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.SwitchWindowAndAlertTest -->
+      <class name="webTests.CheckboxTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.CheckboxTest@74f5ce22]" started-at="2025-07-21T12:40:47 IST" name="setUp" finished-at="2025-07-21T12:40:51 IST" duration-ms="4300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSelectionOfCheckboxes()[pri:0, instance:webTests.CheckboxTest@74f5ce22]" started-at="2025-07-21T12:40:51 IST" name="testSelectionOfCheckboxes" finished-at="2025-07-21T12:40:51 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectionOfCheckboxes -->
+        <test-method signature="testUnselectionOfCheckboxes()[pri:0, instance:webTests.CheckboxTest@74f5ce22]" started-at="2025-07-21T12:40:51 IST" name="testUnselectionOfCheckboxes" finished-at="2025-07-21T12:40:51 IST" depends-on-methods="webTests.CheckboxTest.testSelectionOfCheckboxes" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnselectionOfCheckboxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.CheckboxTest@74f5ce22]" started-at="2025-07-21T12:40:51 IST" name="tearDown" finished-at="2025-07-21T12:40:51 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.CheckboxTest -->
+      <class name="webTests.DragDropTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DragDropTest@79179359]" started-at="2025-07-21T12:41:17 IST" name="setUp" finished-at="2025-07-21T12:41:21 IST" duration-ms="4569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDragAndDropImage()[pri:0, instance:webTests.DragDropTest@79179359]" started-at="2025-07-21T12:41:21 IST" name="testDragAndDropImage" finished-at="2025-07-21T12:41:22 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDragAndDropImage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DragDropTest@79179359]" started-at="2025-07-21T12:41:22 IST" name="tearDown" finished-at="2025-07-21T12:41:22 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.DragDropTest -->
+      <class name="webTests.DatePickerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:40:57 IST" name="setUp" finished-at="2025-07-21T12:41:02 IST" duration-ms="4451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:02 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:02 IST" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[01/01/1900]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:02 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:02 IST" duration-ms="147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[06/03/1967]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:02 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:02 IST" duration-ms="147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[09/09/1973]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:02 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:02 IST" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[26/04/1992]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:02 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:02 IST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[22/02/1998]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:02 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:03 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[02/29/2024]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:03 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-21T12:41:03 IST" duration-ms="140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[31/12/2030]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateEntry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DatePickerTest@16fdec90]" started-at="2025-07-21T12:41:03 IST" name="tearDown" finished-at="2025-07-21T12:41:03 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.DatePickerTest -->
+      <class name="webTests.ModalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ModalTest@6f3c660a]" started-at="2025-07-21T12:40:30 IST" name="setUp" finished-at="2025-07-21T12:40:35 IST" duration-ms="5020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOpenModal()[pri:0, instance:webTests.ModalTest@6f3c660a]" started-at="2025-07-21T12:40:35 IST" name="testOpenModal" finished-at="2025-07-21T12:40:36 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenModal -->
+        <test-method signature="testCloseModal()[pri:0, instance:webTests.ModalTest@6f3c660a]" started-at="2025-07-21T12:40:36 IST" name="testCloseModal" finished-at="2025-07-21T12:40:46 IST" depends-on-methods="webTests.ModalTest.testOpenModal" duration-ms="10614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseModal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ModalTest@6f3c660a]" started-at="2025-07-21T12:40:46 IST" name="tearDown" finished-at="2025-07-21T12:40:47 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.ModalTest -->
+      <class name="webTests.FileUploadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.FileUploadTest@7776ab]" started-at="2025-07-21T12:41:12 IST" name="setUp" finished-at="2025-07-21T12:41:16 IST" duration-ms="4119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testImageUpload()[pri:0, instance:webTests.FileUploadTest@7776ab]" started-at="2025-07-21T12:41:16 IST" name="testImageUpload" finished-at="2025-07-21T12:41:17 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testImageUpload -->
+        <test-method signature="testVideoUpload()[pri:0, instance:webTests.FileUploadTest@7776ab]" started-at="2025-07-21T12:41:17 IST" name="testVideoUpload" finished-at="2025-07-21T12:41:17 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVideoUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.FileUploadTest@7776ab]" started-at="2025-07-21T12:41:17 IST" name="tearDown" finished-at="2025-07-21T12:41:17 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.FileUploadTest -->
+      <class name="webTests.DropdownTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:webTests.DropdownTest@388526fb]" started-at="2025-07-21T12:40:17 IST" name="loadConfig" finished-at="2025-07-21T12:40:17 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DropdownTest@388526fb]" started-at="2025-07-21T12:40:17 IST" name="setUp" finished-at="2025-07-21T12:40:28 IST" duration-ms="10535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAllDropdownOptionsUsingSoftAssert()[pri:0, instance:webTests.DropdownTest@388526fb]" started-at="2025-07-21T12:40:28 IST" name="testAllDropdownOptionsUsingSoftAssert" finished-at="2025-07-21T12:40:30 IST" duration-ms="2318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllDropdownOptionsUsingSoftAssert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DropdownTest@388526fb]" started-at="2025-07-21T12:40:30 IST" name="tearDown" finished-at="2025-07-21T12:40:30 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.DropdownTest -->
+      <class name="webTests.WebFormTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.WebFormTest@25aca718]" started-at="2025-07-21T12:40:51 IST" name="setUp" finished-at="2025-07-21T12:40:56 IST" duration-ms="4404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFillWebForm()[pri:0, instance:webTests.WebFormTest@25aca718]" started-at="2025-07-21T12:40:56 IST" name="testFillWebForm" finished-at="2025-07-21T12:40:57 IST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFillWebForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.WebFormTest@25aca718]" started-at="2025-07-21T12:40:57 IST" name="tearDown" finished-at="2025-07-21T12:40:57 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.WebFormTest -->
     </test> <!-- Web UI Automation Tests -->
   </suite> <!-- UI Automation Suite -->
 </testng-results>

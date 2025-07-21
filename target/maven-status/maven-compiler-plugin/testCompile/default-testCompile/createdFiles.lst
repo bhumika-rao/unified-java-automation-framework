@@ -1,2 +1,13 @@
-webTests/ButtonsTest.class
+webTests/CheckboxTest.class
+webTests/SwitchWindowAndAlertTest.class
+webTests/FileUploadTest.class
+reports/ExtentManager.class
+webTests/DropdownTest.class
+webTests/ScrollTest.class
 base/BaseClass.class
+webTests/WebFormTest.class
+reports/ExtentTestNGListener.class
+webTests/ButtonsTest.class
+webTests/DatePickerTest.class
+webTests/ModalTest.class
+webTests/DragDropTest.class

@@ -1,5 +1,6 @@
 package base;
 
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+@Getter
 public class BaseClass {
 
     protected static String webAutomationUrl;
