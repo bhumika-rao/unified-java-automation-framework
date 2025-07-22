@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import utils.ConfigReader;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 @Getter
@@ -21,19 +21,13 @@ public class BaseClass {
 
     @BeforeSuite(alwaysRun = true)
     public void loadConfig() throws IOException {
-        try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
-            if (input == null) {
-                throw new IOException("config.properties not found");
-            }
-            config.load(input);
-        }
-        webAutomationUrl = config.getProperty("baseUrl");
+        webAutomationUrl = ConfigReader.get("baseUrl");
     }
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
         this.pageUrl = pageUrl;
-        driverFactory = new DriverFactory(config); // will work for all classes now
+        driverFactory = new DriverFactory(config);
         driver = driverFactory.initDriver();
         driver.get(webAutomationUrl + this.pageUrl);
     }
