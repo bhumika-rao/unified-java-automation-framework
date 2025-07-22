@@ -1,123 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
+<testng-results ignored="0" total="38" passed="38" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T23:00:48 IST" name="UI Automation Suite" finished-at="2025-07-22T23:02:10 IST" duration-ms="82127">
+  <suite started-at="2025-07-22T23:17:49 IST" name="UI Automation Suite" finished-at="2025-07-22T23:19:17 IST" duration-ms="88052">
     <groups>
     </groups>
-    <test started-at="2025-07-22T23:00:48 IST" name="Web UI Automation Tests" finished-at="2025-07-22T23:02:10 IST" duration-ms="82127">
-      <class name="webTests.ButtonsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:01 IST" name="setUp" finished-at="2025-07-22T23:02:05 IST" duration-ms="4146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:05 IST" name="init" finished-at="2025-07-22T23:02:10 IST" duration-ms="4923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="testDangerButton()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="testDangerButton" finished-at="2025-07-22T23:02:10 IST" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDangerButton -->
-        <test-method signature="testInfoButton()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="testInfoButton" finished-at="2025-07-22T23:02:10 IST" duration-ms="58" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInfoButton -->
-        <test-method signature="testLinkButton()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="testLinkButton" finished-at="2025-07-22T23:02:10 IST" duration-ms="53" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLinkButton -->
-        <test-method signature="testPrimaryButton()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="testPrimaryButton" finished-at="2025-07-22T23:02:10 IST" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPrimaryButton -->
-        <test-method signature="testSuccessButton()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="testSuccessButton" finished-at="2025-07-22T23:02:10 IST" duration-ms="73" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSuccessButton -->
-        <test-method signature="testWarningButton()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="testWarningButton" finished-at="2025-07-22T23:02:10 IST" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWarningButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ButtonsTest@1a6c1270]" started-at="2025-07-22T23:02:10 IST" name="tearDown" finished-at="2025-07-22T23:02:10 IST" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.ButtonsTest -->
+    <test started-at="2025-07-22T23:17:49 IST" name="Web UI Automation Tests" finished-at="2025-07-22T23:19:17 IST" duration-ms="88052">
       <class name="webTests.ScrollTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ScrollTest@51acdf2e]" started-at="2025-07-22T23:01:41 IST" name="setUp" finished-at="2025-07-22T23:01:46 IST" duration-ms="4700" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ScrollTest@403f0a22]" started-at="2025-07-22T23:18:46 IST" name="setUp" finished-at="2025-07-22T23:18:51 IST" duration-ms="4311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEnterNameAndDate()[pri:0, instance:webTests.ScrollTest@51acdf2e]" started-at="2025-07-22T23:01:46 IST" name="testEnterNameAndDate" finished-at="2025-07-22T23:01:46 IST" duration-ms="284" status="PASS">
+        <test-method signature="testEnterNameAndDate()[pri:0, instance:webTests.ScrollTest@403f0a22]" started-at="2025-07-22T23:18:51 IST" name="testEnterNameAndDate" finished-at="2025-07-22T23:18:51 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnterNameAndDate -->
-        <test-method signature="testScrollToNameAndDateField()[pri:0, instance:webTests.ScrollTest@51acdf2e]" started-at="2025-07-22T23:01:46 IST" name="testScrollToNameAndDateField" finished-at="2025-07-22T23:01:46 IST" duration-ms="54" status="PASS">
+        <test-method signature="testScrollToNameAndDateField()[pri:0, instance:webTests.ScrollTest@403f0a22]" started-at="2025-07-22T23:18:51 IST" name="testScrollToNameAndDateField" finished-at="2025-07-22T23:18:51 IST" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScrollToNameAndDateField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ScrollTest@51acdf2e]" started-at="2025-07-22T23:01:46 IST" name="tearDown" finished-at="2025-07-22T23:01:46 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ScrollTest@403f0a22]" started-at="2025-07-22T23:18:51 IST" name="tearDown" finished-at="2025-07-22T23:18:51 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.ScrollTest -->
       <class name="webTests.SwitchWindowAndAlertTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.SwitchWindowAndAlertTest@6a55299e]" started-at="2025-07-22T23:01:46 IST" name="setUp" finished-at="2025-07-22T23:01:50 IST" duration-ms="4281" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.SwitchWindowAndAlertTest@503ecb24]" started-at="2025-07-22T23:18:51 IST" name="setUp" finished-at="2025-07-22T23:18:56 IST" duration-ms="4903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSwitchToAlert()[pri:0, instance:webTests.SwitchWindowAndAlertTest@6a55299e]" started-at="2025-07-22T23:01:50 IST" name="testSwitchToAlert" finished-at="2025-07-22T23:01:50 IST" duration-ms="87" status="PASS">
+        <test-method signature="testSwitchToAlert()[pri:0, instance:webTests.SwitchWindowAndAlertTest@503ecb24]" started-at="2025-07-22T23:18:56 IST" name="testSwitchToAlert" finished-at="2025-07-22T23:18:56 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSwitchToAlert -->
-        <test-method signature="testSwitchToNewWindow()[pri:0, instance:webTests.SwitchWindowAndAlertTest@6a55299e]" started-at="2025-07-22T23:01:50 IST" name="testSwitchToNewWindow" finished-at="2025-07-22T23:01:51 IST" duration-ms="508" status="PASS">
+        <test-method signature="testSwitchToNewWindow()[pri:0, instance:webTests.SwitchWindowAndAlertTest@503ecb24]" started-at="2025-07-22T23:18:56 IST" name="testSwitchToNewWindow" finished-at="2025-07-22T23:18:57 IST" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSwitchToNewWindow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.SwitchWindowAndAlertTest@6a55299e]" started-at="2025-07-22T23:01:51 IST" name="tearDown" finished-at="2025-07-22T23:01:51 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.SwitchWindowAndAlertTest@503ecb24]" started-at="2025-07-22T23:18:57 IST" name="tearDown" finished-at="2025-07-22T23:18:57 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.SwitchWindowAndAlertTest -->
       <class name="webTests.CheckboxTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.CheckboxTest@7776ab]" started-at="2025-07-22T23:01:25 IST" name="setUp" finished-at="2025-07-22T23:01:29 IST" duration-ms="4329" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.CheckboxTest@289710d9]" started-at="2025-07-22T23:18:23 IST" name="setUp" finished-at="2025-07-22T23:18:28 IST" duration-ms="4338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSelectionOfCheckboxes()[pri:0, instance:webTests.CheckboxTest@7776ab]" started-at="2025-07-22T23:01:29 IST" name="testSelectionOfCheckboxes" finished-at="2025-07-22T23:01:29 IST" duration-ms="279" status="PASS">
+        <test-method signature="testSelectionOfCheckboxes()[pri:0, instance:webTests.CheckboxTest@289710d9]" started-at="2025-07-22T23:18:28 IST" name="testSelectionOfCheckboxes" finished-at="2025-07-22T23:18:28 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectionOfCheckboxes -->
-        <test-method signature="testUnselectionOfCheckboxes()[pri:0, instance:webTests.CheckboxTest@7776ab]" started-at="2025-07-22T23:01:29 IST" name="testUnselectionOfCheckboxes" finished-at="2025-07-22T23:01:30 IST" depends-on-methods="webTests.CheckboxTest.testSelectionOfCheckboxes" duration-ms="192" status="PASS">
+        <test-method signature="testUnselectionOfCheckboxes()[pri:0, instance:webTests.CheckboxTest@289710d9]" started-at="2025-07-22T23:18:28 IST" name="testUnselectionOfCheckboxes" finished-at="2025-07-22T23:18:28 IST" depends-on-methods="webTests.CheckboxTest.testSelectionOfCheckboxes" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnselectionOfCheckboxes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.CheckboxTest@7776ab]" started-at="2025-07-22T23:01:30 IST" name="tearDown" finished-at="2025-07-22T23:01:30 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.CheckboxTest@289710d9]" started-at="2025-07-22T23:18:28 IST" name="tearDown" finished-at="2025-07-22T23:18:28 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.CheckboxTest -->
-      <class name="webTests.DragDropTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DragDropTest@4eb386df]" started-at="2025-07-22T23:01:56 IST" name="setUp" finished-at="2025-07-22T23:02:00 IST" duration-ms="4671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testDragAndDropImage()[pri:0, instance:webTests.DragDropTest@4eb386df]" started-at="2025-07-22T23:02:00 IST" name="testDragAndDropImage" finished-at="2025-07-22T23:02:01 IST" duration-ms="290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDragAndDropImage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DragDropTest@4eb386df]" started-at="2025-07-22T23:02:01 IST" name="tearDown" finished-at="2025-07-22T23:02:01 IST" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.DragDropTest -->
       <class name="webTests.DatePickerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:35 IST" name="setUp" finished-at="2025-07-22T23:01:40 IST" duration-ms="4260" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:41 IST" name="setUp" finished-at="2025-07-22T23:18:45 IST" duration-ms="4533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:40 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:40 IST" duration-ms="282" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:45 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="291" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:40 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:40 IST" duration-ms="147" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:40 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:40 IST" duration-ms="146" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:40 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:40 IST" duration-ms="146" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:40 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:40 IST" duration-ms="144" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +120,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:40 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:41 IST" duration-ms="139" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="118" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:41 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:01:41 IST" duration-ms="140" status="PASS">
+        <test-method signature="testDateEntry(java.lang.String)[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="testDateEntry" data-provider="dateProvider" finished-at="2025-07-22T23:18:46 IST" duration-ms="106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,97 +142,185 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateEntry -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DatePickerTest@dbd8e44]" started-at="2025-07-22T23:01:41 IST" name="tearDown" finished-at="2025-07-22T23:01:41 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DatePickerTest@3da30852]" started-at="2025-07-22T23:18:46 IST" name="tearDown" finished-at="2025-07-22T23:18:46 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.DatePickerTest -->
       <class name="webTests.ModalTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ModalTest@40238dd0]" started-at="2025-07-22T23:01:09 IST" name="setUp" finished-at="2025-07-22T23:01:13 IST" duration-ms="4429" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ModalTest@7ac0e420]" started-at="2025-07-22T23:18:04 IST" name="setUp" finished-at="2025-07-22T23:18:08 IST" duration-ms="4421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testOpenModal()[pri:0, instance:webTests.ModalTest@40238dd0]" started-at="2025-07-22T23:01:13 IST" name="testOpenModal" finished-at="2025-07-22T23:01:14 IST" duration-ms="681" status="PASS">
+        <test-method signature="testOpenModal()[pri:0, instance:webTests.ModalTest@7ac0e420]" started-at="2025-07-22T23:18:08 IST" name="testOpenModal" finished-at="2025-07-22T23:18:09 IST" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenModal -->
-        <test-method signature="testCloseModal()[pri:0, instance:webTests.ModalTest@40238dd0]" started-at="2025-07-22T23:01:14 IST" name="testCloseModal" finished-at="2025-07-22T23:01:25 IST" depends-on-methods="webTests.ModalTest.testOpenModal" duration-ms="10642" status="PASS">
+        <test-method signature="testCloseModal()[pri:0, instance:webTests.ModalTest@7ac0e420]" started-at="2025-07-22T23:18:09 IST" name="testCloseModal" finished-at="2025-07-22T23:18:19 IST" depends-on-methods="webTests.ModalTest.testOpenModal" duration-ms="10649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCloseModal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ModalTest@40238dd0]" started-at="2025-07-22T23:01:25 IST" name="tearDown" finished-at="2025-07-22T23:01:25 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ModalTest@7ac0e420]" started-at="2025-07-22T23:18:19 IST" name="tearDown" finished-at="2025-07-22T23:18:20 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.ModalTest -->
-      <class name="webTests.FileUploadTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.FileUploadTest@2f1de2d6]" started-at="2025-07-22T23:01:51 IST" name="setUp" finished-at="2025-07-22T23:01:55 IST" duration-ms="4182" status="PASS">
+      <class name="apiTests.AuthApiTests">
+        <test-method signature="loginSuccessful()[pri:0, instance:apiTests.AuthApiTests@4b3ed2f0]" started-at="2025-07-22T23:17:58 IST" name="loginSuccessful" finished-at="2025-07-22T23:18:01 IST" duration-ms="2624" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testImageUpload()[pri:0, instance:webTests.FileUploadTest@2f1de2d6]" started-at="2025-07-22T23:01:55 IST" name="testImageUpload" finished-at="2025-07-22T23:01:55 IST" duration-ms="240" status="PASS">
+        </test-method> <!-- loginSuccessful -->
+        <test-method signature="loginUnsuccessful()[pri:0, instance:apiTests.AuthApiTests@4b3ed2f0]" started-at="2025-07-22T23:18:01 IST" name="loginUnsuccessful" finished-at="2025-07-22T23:18:02 IST" duration-ms="1118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testImageUpload -->
-        <test-method signature="testVideoUpload()[pri:0, instance:webTests.FileUploadTest@2f1de2d6]" started-at="2025-07-22T23:01:55 IST" name="testVideoUpload" finished-at="2025-07-22T23:01:56 IST" duration-ms="59" status="PASS">
+        </test-method> <!-- loginUnsuccessful -->
+        <test-method signature="registerSuccessful()[pri:0, instance:apiTests.AuthApiTests@4b3ed2f0]" started-at="2025-07-22T23:18:02 IST" name="registerSuccessful" finished-at="2025-07-22T23:18:03 IST" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVideoUpload -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.FileUploadTest@2f1de2d6]" started-at="2025-07-22T23:01:56 IST" name="tearDown" finished-at="2025-07-22T23:01:56 IST" duration-ms="109" status="PASS">
+        </test-method> <!-- registerSuccessful -->
+        <test-method signature="registerUnsuccessful()[pri:0, instance:apiTests.AuthApiTests@4b3ed2f0]" started-at="2025-07-22T23:18:03 IST" name="registerUnsuccessful" finished-at="2025-07-22T23:18:04 IST" duration-ms="958" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.FileUploadTest -->
+        </test-method> <!-- registerUnsuccessful -->
+      </class> <!-- apiTests.AuthApiTests -->
       <class name="webTests.DropdownTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:webTests.DropdownTest@62ef27a8]" started-at="2025-07-22T23:00:48 IST" name="loadConfig" finished-at="2025-07-22T23:00:48 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:webTests.DropdownTest@79179359]" started-at="2025-07-22T23:17:49 IST" name="loadConfig" finished-at="2025-07-22T23:17:49 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DropdownTest@62ef27a8]" started-at="2025-07-22T23:00:48 IST" name="setUp" finished-at="2025-07-22T23:00:58 IST" duration-ms="9366" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DropdownTest@79179359]" started-at="2025-07-22T23:17:49 IST" name="setUp" finished-at="2025-07-22T23:17:56 IST" duration-ms="6703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAllDropdownOptionsUsingSoftAssert()[pri:0, instance:webTests.DropdownTest@62ef27a8]" started-at="2025-07-22T23:00:58 IST" name="testAllDropdownOptionsUsingSoftAssert" finished-at="2025-07-22T23:01:00 IST" duration-ms="2518" status="PASS">
+        <test-method signature="testAllDropdownOptionsUsingSoftAssert()[pri:0, instance:webTests.DropdownTest@79179359]" started-at="2025-07-22T23:17:56 IST" name="testAllDropdownOptionsUsingSoftAssert" finished-at="2025-07-22T23:17:58 IST" duration-ms="2324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAllDropdownOptionsUsingSoftAssert -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DropdownTest@62ef27a8]" started-at="2025-07-22T23:01:00 IST" name="tearDown" finished-at="2025-07-22T23:01:00 IST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DropdownTest@79179359]" started-at="2025-07-22T23:17:58 IST" name="tearDown" finished-at="2025-07-22T23:17:58 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.DropdownTest -->
       <class name="apiTests.UserApiTests">
-        <test-method signature="delayedResponseTest()[pri:0, instance:apiTests.UserApiTests@18a136ac]" started-at="2025-07-22T23:01:00 IST" name="delayedResponseTest" finished-at="2025-07-22T23:01:06 IST" duration-ms="5890" status="PASS">
+        <test-method signature="delayedResponseTest()[pri:0, instance:apiTests.UserApiTests@517d4a0d]" started-at="2025-07-22T23:18:28 IST" name="delayedResponseTest" finished-at="2025-07-22T23:18:32 IST" duration-ms="4055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delayedResponseTest -->
-        <test-method signature="getSingleUser()[pri:0, instance:apiTests.UserApiTests@18a136ac]" started-at="2025-07-22T23:01:06 IST" name="getSingleUser" finished-at="2025-07-22T23:01:07 IST" duration-ms="976" status="PASS">
+        <test-method signature="getSingleUser()[pri:0, instance:apiTests.UserApiTests@517d4a0d]" started-at="2025-07-22T23:18:32 IST" name="getSingleUser" finished-at="2025-07-22T23:18:33 IST" duration-ms="917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleUser -->
-        <test-method signature="getUserNotFound()[pri:0, instance:apiTests.UserApiTests@18a136ac]" started-at="2025-07-22T23:01:07 IST" name="getUserNotFound" finished-at="2025-07-22T23:01:08 IST" duration-ms="956" status="PASS">
+        <test-method signature="getUserNotFound()[pri:0, instance:apiTests.UserApiTests@517d4a0d]" started-at="2025-07-22T23:18:33 IST" name="getUserNotFound" finished-at="2025-07-22T23:18:34 IST" duration-ms="1104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserNotFound -->
-        <test-method signature="listUsers()[pri:0, instance:apiTests.UserApiTests@18a136ac]" started-at="2025-07-22T23:01:08 IST" name="listUsers" finished-at="2025-07-22T23:01:09 IST" duration-ms="851" status="PASS">
+        <test-method signature="listUsers()[pri:0, instance:apiTests.UserApiTests@517d4a0d]" started-at="2025-07-22T23:18:34 IST" name="listUsers" finished-at="2025-07-22T23:18:35 IST" duration-ms="923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listUsers -->
       </class> <!-- apiTests.UserApiTests -->
       <class name="webTests.WebFormTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.WebFormTest@79179359]" started-at="2025-07-22T23:01:30 IST" name="setUp" finished-at="2025-07-22T23:01:34 IST" duration-ms="4402" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.WebFormTest@5a18cd76]" started-at="2025-07-22T23:18:35 IST" name="setUp" finished-at="2025-07-22T23:18:40 IST" duration-ms="4214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFillWebForm()[pri:0, instance:webTests.WebFormTest@79179359]" started-at="2025-07-22T23:01:34 IST" name="testFillWebForm" finished-at="2025-07-22T23:01:35 IST" duration-ms="1082" status="PASS">
+        <test-method signature="testFillWebForm()[pri:0, instance:webTests.WebFormTest@5a18cd76]" started-at="2025-07-22T23:18:40 IST" name="testFillWebForm" finished-at="2025-07-22T23:18:41 IST" duration-ms="1082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFillWebForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.WebFormTest@79179359]" started-at="2025-07-22T23:01:35 IST" name="tearDown" finished-at="2025-07-22T23:01:35 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.WebFormTest@5a18cd76]" started-at="2025-07-22T23:18:41 IST" name="tearDown" finished-at="2025-07-22T23:18:41 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webTests.WebFormTest -->
+      <class name="webTests.ButtonsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:07 IST" name="setUp" finished-at="2025-07-22T23:19:12 IST" duration-ms="5286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:12 IST" name="init" finished-at="2025-07-22T23:19:16 IST" duration-ms="4219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testDangerButton()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:16 IST" name="testDangerButton" finished-at="2025-07-22T23:19:16 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerButton -->
+        <test-method signature="testInfoButton()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:16 IST" name="testInfoButton" finished-at="2025-07-22T23:19:16 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInfoButton -->
+        <test-method signature="testLinkButton()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:16 IST" name="testLinkButton" finished-at="2025-07-22T23:19:17 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkButton -->
+        <test-method signature="testPrimaryButton()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:17 IST" name="testPrimaryButton" finished-at="2025-07-22T23:19:17 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrimaryButton -->
+        <test-method signature="testSuccessButton()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:17 IST" name="testSuccessButton" finished-at="2025-07-22T23:19:17 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessButton -->
+        <test-method signature="testWarningButton()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:17 IST" name="testWarningButton" finished-at="2025-07-22T23:19:17 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWarningButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.ButtonsTest@31bcf236]" started-at="2025-07-22T23:19:17 IST" name="tearDown" finished-at="2025-07-22T23:19:17 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.ButtonsTest -->
+      <class name="webTests.DragDropTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.DragDropTest@6995bf68]" started-at="2025-07-22T23:19:02 IST" name="setUp" finished-at="2025-07-22T23:19:06 IST" duration-ms="4571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDragAndDropImage()[pri:0, instance:webTests.DragDropTest@6995bf68]" started-at="2025-07-22T23:19:06 IST" name="testDragAndDropImage" finished-at="2025-07-22T23:19:07 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDragAndDropImage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.DragDropTest@6995bf68]" started-at="2025-07-22T23:19:07 IST" name="tearDown" finished-at="2025-07-22T23:19:07 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.DragDropTest -->
+      <class name="apiTests.CRUDApiTests">
+        <test-method signature="createUser()[pri:0, instance:apiTests.CRUDApiTests@4fad9bb2]" started-at="2025-07-22T23:18:20 IST" name="createUser" finished-at="2025-07-22T23:18:20 IST" duration-ms="910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="deleteUser()[pri:0, instance:apiTests.CRUDApiTests@4fad9bb2]" started-at="2025-07-22T23:18:20 IST" name="deleteUser" finished-at="2025-07-22T23:18:21 IST" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method signature="updateUserPatch()[pri:0, instance:apiTests.CRUDApiTests@4fad9bb2]" started-at="2025-07-22T23:18:21 IST" name="updateUserPatch" finished-at="2025-07-22T23:18:22 IST" duration-ms="1012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserPatch -->
+        <test-method signature="updateUserPut()[pri:0, instance:apiTests.CRUDApiTests@4fad9bb2]" started-at="2025-07-22T23:18:22 IST" name="updateUserPut" finished-at="2025-07-22T23:18:23 IST" duration-ms="987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserPut -->
+      </class> <!-- apiTests.CRUDApiTests -->
+      <class name="webTests.FileUploadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTests.FileUploadTest@4c51cf28]" started-at="2025-07-22T23:18:57 IST" name="setUp" finished-at="2025-07-22T23:19:01 IST" duration-ms="4396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testImageUpload()[pri:0, instance:webTests.FileUploadTest@4c51cf28]" started-at="2025-07-22T23:19:01 IST" name="testImageUpload" finished-at="2025-07-22T23:19:02 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testImageUpload -->
+        <test-method signature="testVideoUpload()[pri:0, instance:webTests.FileUploadTest@4c51cf28]" started-at="2025-07-22T23:19:02 IST" name="testVideoUpload" finished-at="2025-07-22T23:19:02 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVideoUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webTests.FileUploadTest@4c51cf28]" started-at="2025-07-22T23:19:02 IST" name="tearDown" finished-at="2025-07-22T23:19:02 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.FileUploadTest -->
     </test> <!-- Web UI Automation Tests -->
   </suite> <!-- UI Automation Suite -->
 </testng-results>

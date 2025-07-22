@@ -1,10 +1,12 @@
 webTests/CheckboxTest.class
+apiTests/CRUDApiTests.class
 webTests/SwitchWindowAndAlertTest.class
 webTests/FileUploadTest.class
 reports/ExtentManager.class
 apiTests/UserApiTests.class
 webTests/DropdownTest.class
 webTests/ScrollTest.class
+apiTests/AuthApiTests.class
 base/BaseClass.class
 webTests/WebFormTest.class
 reports/ExtentTestNGListener.class

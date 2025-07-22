@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="86.73" tests="30" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="91.546" tests="38" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="webdriver.chrome.driver" value="/Users/bhumika.s/.cache/selenium/chromedriver/mac64/138.0.7204.157/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/surefire/surefirebooter-20250722230047732_3.jar /Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/surefire 2025-07-22T23-00-47_639-jvmRun1 surefire-20250722230047732_1tmp surefire_0-20250722230047732_2tmp"/>
+    <property name="sun.java.command" value="/Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/surefire/surefirebooter-20250722231748264_3.jar /Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/surefire 2025-07-22T23-17-48_168-jvmRun1 surefire-20250722231748264_1tmp surefire_0-20250722231748264_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/test-classes:/Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/classes:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-java/4.33.0/selenium-java-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-api/4.33.0/selenium-api-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.33.0/selenium-chrome-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.33.0/selenium-chromium-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-json/4.33.0/selenium-json-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.33.0/selenium-manager-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.33.0/selenium-devtools-v135-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.33.0/selenium-devtools-v136-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v137/4.33.0/selenium-devtools-v137-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.33.0/selenium-edge-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.33.0/selenium-firefox-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-http/4.33.0/selenium-http-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.33.0/selenium-ie-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.33.0/selenium-remote-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/bhumika.s/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/bhumika.s/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/bhumika.s/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-api/1.50.0/opentelemetry-api-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-context/1.50.0/opentelemetry-context-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.50.0/opentelemetry-exporter-logging-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.50.0/opentelemetry-sdk-common-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.50.0/opentelemetry-sdk-extension-autoconfigure-spi-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.50.0/opentelemetry-sdk-extension-autoconfigure-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.50.0/opentelemetry-sdk-trace-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.50.0/opentelemetry-sdk-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.50.0/opentelemetry-sdk-metrics-1.50.0.jar:/Users/bhumika.s/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.50.0/opentelemetry-sdk-logs-1.50.0.jar:/Users/bhumika.s/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-os/4.33.0/selenium-os-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.33.0/selenium-safari-driver-4.33.0.jar:/Users/bhumika.s/.m2/repository/org/seleniumhq/selenium/selenium-support/4.33.0/selenium-support-4.33.0.jar:/Users/bhumika.s/.m2/repository/io/appium/java-client/9.4.0/java-client-9.4.0.jar:/Users/bhumika.s/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/bhumika.s/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/bhumika.s/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/bhumika.s/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/bhumika.s/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/bhumika.s/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/bhumika.s/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/bhumika.s/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/bhumika.s/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/bhumika.s/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/bhumika.s/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/bhumika.s/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/bhumika.s/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/bhumika.s/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/bhumika.s/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/bhumika.s/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/bhumika.s/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/bhumika.s/.m2/repository/io/github/bonigarcia/webdrivermanager/6.1.0/webdrivermanager-6.1.0.jar:/Users/bhumika.s/.m2/repository/com/github/docker-java/docker-java/3.5.0/docker-java-3.5.0.jar:/Users/bhumika.s/.m2/repository/com/github/docker-java/docker-java-core/3.5.0/docker-java-core-3.5.0.jar:/Users/bhumika.s/.m2/repository/com/github/docker-java/docker-java-api/3.5.0/docker-java-api-3.5.0.jar:/Users/bhumika.s/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/Users/bhumika.s/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/Users/bhumika.s/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/Users/bhumika.s/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/bhumika.s/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.0/docker-java-transport-httpclient5-3.5.0.jar:/Users/bhumika.s/.m2/repository/com/github/docker-java/docker-java-transport/3.5.0/docker-java-transport-3.5.0.jar:/Users/bhumika.s/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/bhumika.s/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/bhumika.s/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/bhumika.s/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/bhumika.s/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/bhumika.s/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/bhumika.s/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/bhumika.s/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/bhumika.s/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:/Users/bhumika.s/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/bhumika.s/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/bhumika.s/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/bhumika.s/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/bhumika.s/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/bhumika.s/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/bhumika.s/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/bhumika.s/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/bhumika.s/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/bhumika.s/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/surefire/surefirebooter-20250722230047732_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/bhumika.s/IdeaProjects/unified-java-automation-framework/target/surefire/surefirebooter-20250722231748264_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9"/>
     <property name="user.name" value="bhumika.s"/>
@@ -57,84 +57,92 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testAllDropdownOptionsUsingSoftAssert" classname="webTests.DropdownTest" time="2.522">
+  <testcase name="testAllDropdownOptionsUsingSoftAssert" classname="webTests.DropdownTest" time="2.327">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jul 22, 2025 11:00:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 22, 2025 11:17:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="delayedResponseTest" classname="apiTests.UserApiTests" time="5.89"/>
-  <testcase name="getSingleUser" classname="apiTests.UserApiTests" time="0.977"/>
-  <testcase name="getUserNotFound" classname="apiTests.UserApiTests" time="0.956"/>
-  <testcase name="listUsers" classname="apiTests.UserApiTests" time="0.851"/>
-  <testcase name="testOpenModal" classname="webTests.ModalTest" time="0.681">
-    <system-err><![CDATA[Jul 22, 2025 11:01:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="loginSuccessful" classname="apiTests.AuthApiTests" time="2.624"/>
+  <testcase name="loginUnsuccessful" classname="apiTests.AuthApiTests" time="1.118"/>
+  <testcase name="registerSuccessful" classname="apiTests.AuthApiTests" time="1.011"/>
+  <testcase name="registerUnsuccessful" classname="apiTests.AuthApiTests" time="0.958"/>
+  <testcase name="testOpenModal" classname="webTests.ModalTest" time="0.662">
+    <system-err><![CDATA[Jul 22, 2025 11:18:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testCloseModal" classname="webTests.ModalTest" time="10.643"/>
-  <testcase name="testSelectionOfCheckboxes" classname="webTests.CheckboxTest" time="0.278">
-    <system-err><![CDATA[Jul 22, 2025 11:01:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCloseModal" classname="webTests.ModalTest" time="10.649"/>
+  <testcase name="createUser" classname="apiTests.CRUDApiTests" time="0.909"/>
+  <testcase name="deleteUser" classname="apiTests.CRUDApiTests" time="1.022"/>
+  <testcase name="updateUserPatch" classname="apiTests.CRUDApiTests" time="1.013"/>
+  <testcase name="updateUserPut" classname="apiTests.CRUDApiTests" time="0.987"/>
+  <testcase name="testSelectionOfCheckboxes" classname="webTests.CheckboxTest" time="0.263">
+    <system-err><![CDATA[Jul 22, 2025 11:18:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testUnselectionOfCheckboxes" classname="webTests.CheckboxTest" time="0.193"/>
-  <testcase name="testFillWebForm" classname="webTests.WebFormTest" time="1.081">
-    <system-err><![CDATA[Jul 22, 2025 11:01:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testUnselectionOfCheckboxes" classname="webTests.CheckboxTest" time="0.197"/>
+  <testcase name="delayedResponseTest" classname="apiTests.UserApiTests" time="4.056"/>
+  <testcase name="getSingleUser" classname="apiTests.UserApiTests" time="0.917"/>
+  <testcase name="getUserNotFound" classname="apiTests.UserApiTests" time="1.103"/>
+  <testcase name="listUsers" classname="apiTests.UserApiTests" time="0.922"/>
+  <testcase name="testFillWebForm" classname="webTests.WebFormTest" time="1.082">
+    <system-err><![CDATA[Jul 22, 2025 11:18:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testDateEntry[01/01/1900](1)" classname="webTests.DatePickerTest" time="0.283">
-    <system-err><![CDATA[Jul 22, 2025 11:01:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testDateEntry[01/01/1900](1)" classname="webTests.DatePickerTest" time="0.29">
+    <system-err><![CDATA[Jul 22, 2025 11:18:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testDateEntry[06/03/1967](2)" classname="webTests.DatePickerTest" time="0.148"/>
-  <testcase name="testDateEntry[09/09/1973](3)" classname="webTests.DatePickerTest" time="0.147"/>
-  <testcase name="testDateEntry[26/04/1992](4)" classname="webTests.DatePickerTest" time="0.147"/>
-  <testcase name="testDateEntry[22/02/1998](5)" classname="webTests.DatePickerTest" time="0.143"/>
-  <testcase name="testDateEntry[02/29/2024](6)" classname="webTests.DatePickerTest" time="0.14"/>
-  <testcase name="testDateEntry[31/12/2030](7)" classname="webTests.DatePickerTest" time="0.141"/>
-  <testcase name="testEnterNameAndDate" classname="webTests.ScrollTest" time="0.284">
-    <system-err><![CDATA[Jul 22, 2025 11:01:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testDateEntry[06/03/1967](2)" classname="webTests.DatePickerTest" time="0.153"/>
+  <testcase name="testDateEntry[09/09/1973](3)" classname="webTests.DatePickerTest" time="0.152"/>
+  <testcase name="testDateEntry[26/04/1992](4)" classname="webTests.DatePickerTest" time="0.124"/>
+  <testcase name="testDateEntry[22/02/1998](5)" classname="webTests.DatePickerTest" time="0.112"/>
+  <testcase name="testDateEntry[02/29/2024](6)" classname="webTests.DatePickerTest" time="0.119"/>
+  <testcase name="testDateEntry[31/12/2030](7)" classname="webTests.DatePickerTest" time="0.106"/>
+  <testcase name="testEnterNameAndDate" classname="webTests.ScrollTest" time="0.26">
+    <system-err><![CDATA[Jul 22, 2025 11:18:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testScrollToNameAndDateField" classname="webTests.ScrollTest" time="0.054"/>
-  <testcase name="testSwitchToAlert" classname="webTests.SwitchWindowAndAlertTest" time="0.088">
+  <testcase name="testScrollToNameAndDateField" classname="webTests.ScrollTest" time="0.045"/>
+  <testcase name="testSwitchToAlert" classname="webTests.SwitchWindowAndAlertTest" time="0.114">
     <system-out><![CDATA[Alert handled with text: This is a test alert!
 ]]></system-out>
-    <system-err><![CDATA[Jul 22, 2025 11:01:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 22, 2025 11:18:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testSwitchToNewWindow" classname="webTests.SwitchWindowAndAlertTest" time="0.51">
+  <testcase name="testSwitchToNewWindow" classname="webTests.SwitchWindowAndAlertTest" time="0.621">
     <system-out><![CDATA[New window title: Formy
 ]]></system-out>
   </testcase>
-  <testcase name="testImageUpload" classname="webTests.FileUploadTest" time="0.239">
-    <system-err><![CDATA[Jul 22, 2025 11:01:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testImageUpload" classname="webTests.FileUploadTest" time="0.237">
+    <system-err><![CDATA[Jul 22, 2025 11:18:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testVideoUpload" classname="webTests.FileUploadTest" time="0.059"/>
-  <testcase name="testDragAndDropImage" classname="webTests.DragDropTest" time="0.29">
-    <system-err><![CDATA[Jul 22, 2025 11:01:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testVideoUpload" classname="webTests.FileUploadTest" time="0.069"/>
+  <testcase name="testDragAndDropImage" classname="webTests.DragDropTest" time="0.295">
+    <system-err><![CDATA[Jul 22, 2025 11:19:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testDangerButton" classname="webTests.ButtonsTest" time="0.084">
-    <system-err><![CDATA[Jul 22, 2025 11:02:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testDangerButton" classname="webTests.ButtonsTest" time="0.093">
+    <system-err><![CDATA[Jul 22, 2025 11:19:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-Jul 22, 2025 11:02:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 22, 2025 11:19:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="testInfoButton" classname="webTests.ButtonsTest" time="0.058"/>
-  <testcase name="testLinkButton" classname="webTests.ButtonsTest" time="0.053"/>
-  <testcase name="testPrimaryButton" classname="webTests.ButtonsTest" time="0.065"/>
-  <testcase name="testSuccessButton" classname="webTests.ButtonsTest" time="0.072"/>
-  <testcase name="testWarningButton" classname="webTests.ButtonsTest" time="0.067"/>
+  <testcase name="testInfoButton" classname="webTests.ButtonsTest" time="0.075"/>
+  <testcase name="testLinkButton" classname="webTests.ButtonsTest" time="0.067"/>
+  <testcase name="testPrimaryButton" classname="webTests.ButtonsTest" time="0.069"/>
+  <testcase name="testSuccessButton" classname="webTests.ButtonsTest" time="0.064"/>
+  <testcase name="testWarningButton" classname="webTests.ButtonsTest" time="0.066"/>
 </testsuite>
