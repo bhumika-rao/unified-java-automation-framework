@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import utils.ConfigReader;
 
 import java.time.Duration;
 import java.util.Locale;
@@ -20,14 +21,14 @@ public class DriverFactory {
     }
 
     public WebDriver initDriver() {
-        String browser = config.getProperty("browser", "chrome").toLowerCase(Locale.ROOT);
+        String browser = ConfigReader.get("browser").toLowerCase(Locale.ROOT);
         WebDriver localDriver;
 
         switch (browser) {
             case "chrome" -> {
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
-                if ("true".equals(config.getProperty("headless"))) {
+                if ("true".equals(ConfigReader.get("headless"))) {
                     options.addArguments("--headless=new");
                 }
                 localDriver = new ChromeDriver(options);
@@ -41,7 +42,7 @@ public class DriverFactory {
 
         localDriver.manage().window().maximize();
         localDriver.manage().timeouts().implicitlyWait(
-                Duration.ofSeconds(Long.parseLong(config.getProperty("implicit.wait", "10")))
+                Duration.ofSeconds(Long.parseLong(ConfigReader.get("implicit.wait")))
         );
 
         driver.set(localDriver);

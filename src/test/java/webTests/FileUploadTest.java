@@ -4,6 +4,7 @@ import base.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import utils.ConfigReader;
 import web.FileUploadActions;
 import web.FileUploadView;
 
@@ -28,10 +29,10 @@ public class FileUploadTest extends BaseClass {
         // Verify file upload input is displayed
         Assert.assertTrue(fileUploadView.getInputFileUpload().isDisplayed(), "File upload input is not displayed.");
 
-        fileUploadActions.uploadFile(config.getProperty("test.image.path"));
+        fileUploadActions.uploadFile(ConfigReader.get("test.image.path"));
 
         // Verify the file was uploaded successfully
-        Assert.assertTrue(fileUploadView.getInputFileUpload().getAttribute("value").contains(config.getProperty("test.image.path")), "Image file was not uploaded successfully.");
+        Assert.assertTrue(fileUploadView.getInputFileUpload().getAttribute("value").contains(ConfigReader.get("test.image.path")), "Image file was not uploaded successfully.");
     }
 
     //Tests for video file upload functionality
@@ -40,9 +41,9 @@ public class FileUploadTest extends BaseClass {
         // Verify file upload input is displayed
         Assert.assertTrue(fileUploadView.getInputFileUpload().isDisplayed(), "File upload input is not displayed.");
 
-        fileUploadActions.uploadFile(config.getProperty("test.video.path"));
+        fileUploadActions.uploadFile(ConfigReader.get("test.video.path"));
 
         // Verify the file was uploaded successfully
-        Assert.assertTrue(fileUploadView.getInputFileUpload().getAttribute("value").contains(config.getProperty("test.video.path")), "Video file was not uploaded successfully.");
+        Assert.assertTrue(fileUploadView.getInputFileUpload().getAttribute("value").contains(ConfigReader.get("test.video.path")), "Video file was not uploaded successfully.");
     }
 }

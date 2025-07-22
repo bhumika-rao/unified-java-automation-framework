@@ -6,6 +6,7 @@
     <test name="Web UI Automation Tests">
         <packages>
             <package name="webTests"/>
+            <package name="apiTests"/>
         </packages>
     </test>
 </suite>

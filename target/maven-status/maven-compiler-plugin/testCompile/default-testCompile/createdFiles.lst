@@ -2,6 +2,7 @@ webTests/CheckboxTest.class
 webTests/SwitchWindowAndAlertTest.class
 webTests/FileUploadTest.class
 reports/ExtentManager.class
+apiTests/UserApiTests.class
 webTests/DropdownTest.class
 webTests/ScrollTest.class
 base/BaseClass.class
